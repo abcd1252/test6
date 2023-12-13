@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+a{ color: black;}
+a:hover {
+    color: rgb(134, 134, 134); /* 마우스 호버 시 링크 색상을 변경하는 부분 */
+}
+.n1-2{display: none;}
+
+.menu {
+    top: 0;
+    width: 100vw;
+    height: 88px;
+    background-color: white;
+    z-index: 5;
+}
+.mp3{display: none;}
+.mp4{display: none;}
+.mwrap {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+.mbt a {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    transition: all 0.5s;
+    
+}
+
+.mbt a:hover {
+    color: #3F2DE7;
+}
+
+.logo {
+    scale: 100%;
+    padding-top: 20px;
+    padding-left:  0px;
+    margin-left: -20px;
+}
+
+.menubar {
+    display: none;
+}
+.menulist{
+    display: none;
+}
+
+.all {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+.n {z-index: -1;
+    position: relative; /* 절대 위치 대신 상대 위치로 변경 */
+    height: 100vh; /* 요소가 차지하는 영역을 고려하여 높이를 조정 */
+   
+}
+.n1 {
+    display: flex; /* Flexbox로 요소 배치 설정 */
+    justify-content: space-between; /* 요소들 사이의 간격을 최대화하여 옆으로 정렬 */
+    width: 100vw;
+    height: 110%;
+    background-color: #FAF3E4;
+}
+
+.n2 {
+    width: 100vw;
+    height: 120%;
+    background-color: #F8F5EE;
+    
+
+}
+
+.n3 {
+    width: 100vw;
+    
+    background-color: #FAF3E4;
+    height: 105vh;
+   
+}
+
+.l3 {
+    width: 100vw;
+    height: 105%;
+    background-color: #E4E0D7;
+    height: 28vh;
+   
+}
+
+
+.d {
+    padding-top: 3%;
+    scale: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.d > div {
+    margin: 13px; /* 이미지 사이의 간격 조정 */
+}
+.line1 { scale: 70%;}
+
+.p1{
+    position: absolute;
+    z-index: 3;
+    padding-left: 49%;
+    padding-top: 11%;
+    scale: 115%;
+    
+}
+.p3{position: relative;
+    z-index: 3;
+    padding-left: 48%;
+    padding-top: 30%;
+    
+}
+.p2{
+    
+    scale: 110%;
+    z-index: 2;
+    padding-left: 0;
+    margin-left: -89%;
+    padding-top: 12.5%;
+    
+}
+.s{
+    max-width: 100%;
+    height: auto;
+    padding-top: 7%; /* 화면 높이의 10%만큼의 여백 */
+    z-index: 0;
+}
+.w1{
+    background-color: #FAF3E4;
+    height: 30%;
+}
+
+.t1 {
+    text-align: left; /* 텍스트 가운데 정렬 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 55%; /* 원하는 너비 설정 */
+    padding-top: 0%; /* 위쪽 여백 설정 */
+    padding-left: 5%;
+}
+.p4{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+   
+}
+.p4-2{padding-top: 1.8%;}
+.p5{ 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.t2{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    padding-top: 2%;
+    
+}
+
+.p6{
+    text-align: center;
+}
+.t3{ text-align: left; /* 텍스트 가운데 정렬 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 50.7%; /* 원하는 너비 설정 */
+    
+    padding-top: 3%;
+}
+.t1, .t2, .t3 {
+    font-size: 16px; /* 폰트 사이즈 조절 */
+    line-height: 1.5; /* 행간 조절 */
+}
+
+@media screen and (max-width:600px)
+
+{
+.mwrap{
+text-align: center;
+}
+.test{display: none;}
+
+.menubar {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-right: 13%;
+}
+.mbt{display: none;}
+
+.logo{ 
+    position: relative;
+    scale: 70%;
+    text-align: left;
+}
+
+.menulist{
+    display: none;position:
+    absolute;z-index:
+    2;width: 100%;
+   
+}
+.menulist li{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 0.1px solid rgb(233, 233, 233);
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.em;
+    transition: background-color 0.3s ease;
+    
+}
+.cbt{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 0.1px solid rgb(233, 233, 233);
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.em;
+}
+.menulist li:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(134, 134, 134); 
+}
+.cbt:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(134, 134, 134); 
+}
+
+.n1 {
+    
+    position: relative;
+    width: 100vw;
+    height: 0%;
+    background-color: #FAF3E4;
+}
+
+.n2 {
+    width: 100vw;
+    height: 105%;
+    background-color: #F8F5EE;
+}
+
+.n3 {
+    width: 100vw;
+    height: 105%;
+    background-color: #FAF3E4;
+    height: 106vh;
+   
+}
+.l3{
+    height: 15vh;
+
+}
+.mp3{display: block;}
+.mp4{display: block;}
+
+.d {
+    scale: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.d > div {
+    margin: 13px; /* 이미지 사이의 간격 조정 */
+}
+.line1 { scale: 100%;
+    display: none;}
+.s {
+    display: none; /* 모바일 화면에서 숨김 */
+}
+.n1-2{
+    background-color: #fefbf4;
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 50vh;
+
+}
+.mp1{
+    text-align: center;
+    margin: 0 auto;
+    z-index: 0;
+}
+.mp2{
+    text-align: center;
+    margin: 0 auto;
+    scale: 110%;
+    z-index: 2;
+    padding-top: 0%;
+    margin-top: -10%;
+}
+.mp3{
+    padding-top: 46%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 0;
+    scale: 124%;
+}
+.mp4{
+    text-align: center;
+    margin: 0 auto;
+    scale: 125%;
+    z-index: 2;
+    padding-top: 0%;
+    
+}
+
+.p1{
+    position: absolute;
+    z-index: 4;
+    padding-left: 0%;
+    padding-top: 94%;
+    scale: 90%;
+    display: none;
+    
+}
+.p2{position: relative;
+    scale: 50%;
+    z-index: 3;
+    padding: 0;
+    padding-top: 90%;
+    padding-left: 0;
+    margin-left: -45%;
+    display: none;
+    
+}
+.p3{display: none;
+  
+    
+}
+
+.w1{
+    background-color: #FAF3E4;
+    height: 110%;
+    padding-top: 0%;
+}
+.t1 {
+    text-align: left; /* 텍스트 가운데 정렬 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 80%; /* 원하는 너비 설정 */
+    padding-top: 75%; /* 위쪽 여백 설정 */
+    padding-left: 0%;
+}
+.p4{display: block;
+    height: 4%;
+}
+.p4-1{text-align: center;}
+.p4-2{text-align: center;
+    padding-top: 0%;
+    margin-top: -4%;
+}
+.p5{
+    scale: 55%;
+    padding-left: 0;
+    margin-left: -27%;
+    padding-top: 10%;
+    display: none;
+}
+
+.t2{
+    width: 81%;
+    text-align: center;
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    padding-top: 0%;
+    margin-top: 25%;
+    
+}
+.p6{
+    scale: 67%;
+    margin-left: -18.5%;
+    display: none;
+}
+.t3{ text-align: left; /* 텍스트 가운데 정렬 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 85%; /* 원하는 너비 설정 */
+    
+    padding-top: 0%;
+    margin-top: 14%;
+}
+}

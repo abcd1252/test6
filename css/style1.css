@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+a{ color: black;}
+a:hover {
+    color: rgb(134, 134, 134); /* 마우스 호버 시 링크 색상을 변경하는 부분 */
+}
+
+.menu {
+    top: 0;
+    width: 100vw;
+    height: 88px;
+    background-color: white;
+    z-index: 4;
+}
+
+.mwrap {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+.mbt a {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    transition: all 0.5s;
+    
+}
+
+.mbt a:hover {
+    color: #dcdcdc;
+}
+
+.logo {
+    scale: 100%;
+    padding-top: 20px;
+    padding-left:  0px;
+    margin-left: -20px;
+}
+
+.menubar {
+    display: none;
+}
+.menulist{
+    display: none;
+}
+
+.all {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+.n {
+    position: relative; /* 절대 위치 대신 상대 위치로 변경 */
+    height: 100vh; /* 요소가 차지하는 영역을 고려하여 높이를 조정 */
+   
+}
+.n1 {
+    display: flex; /* Flexbox로 요소 배치 설정 */
+    justify-content: space-between; /* 요소들 사이의 간격을 최대화하여 옆으로 정렬 */
+    width: 100vw;
+    height: 70%;
+    background-color: #F8F5EE;
+}
+
+.n2 {
+    width: 100vw;
+    height: 190%;
+    background-color: #FAF3E4;
+}
+
+.l3 {
+    width: 100vw;
+    height: 25%;
+    background-color: #E4E0D7;
+   
+}
+.mp4{display: none;}
+
+
+.p1 img {
+    position: relative;
+    text-align: center;
+    width: 110%; /* 이미지의 최대 너비를 부모 요소의 50%로 설정합니다. */
+    height: auto; /* 이미지의 높이를 자동으로 조절하여 비율을 유지합니다. */
+    padding-top: 220px;
+    flex: 1;
+    z-index: 1; /* p1 이미지가 가장 아래에 위치하도록 함 */
+}
+
+.p2 {
+    position: absolute;
+    scale: 80%;
+    top: 8%;
+    left: 45%;
+    z-index: 2; /* p2 이미지가 p1 이미지 위에 위치하도록 함 */
+    
+}
+
+.p3 img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 115%; /* 화면 높이의 10%만큼의 여백 */
+    padding-left: 10%; /* 화면 너비의 1.5%만큼의 여백 */
+}
+
+.t1{ width: 47%;
+    height: auto;
+    padding-top: 19%;
+    padding-left: 23%;
+}
+
+
+.p4 {
+    scale: 75%;
+    position: relative;
+    padding-top: 5%;
+}
+
+.p4 .p4-1 {
+    position: relative;
+    text-align: center;
+    left: -10%;
+}
+
+.p4 .p4-2 {
+    scale: 90%;
+    position: absolute;
+    top: 56%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+}
+.p4 .p4-3 {
+    scale: 90%;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay;
+    opacity: 30%;
+}
+
+.t2 {
+    position: relative;
+    text-align: center;
+    padding-top: 0%;
+    z-index: 1;
+}
+
+.t3 {
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 52%; /* 원하는 너비 설정 */
+    padding-top: 6%; /* 위쪽 여백 설정 */
+}
+
+.t1, .t2, .t3 {
+    font-size: 16px; /* 폰트 사이즈 조절 */
+    line-height: 1.5; /* 행간 조절 */
+}
+
+.t2{ font-weight: bold;}
+
+.n3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28vh;
+}
+
+.d {
+    padding-top: 2%;
+    scale: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.d > div {
+    margin: 13px; /* 이미지 사이의 간격 조정 */
+}
+
+
+
+
+
+
+@media screen and (max-width:600px)
+
+{
+.mwrap{
+text-align: center;
+}
+.test{display: none;}
+
+.menubar {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-right: 13%;
+}
+.mbt{display: none;}
+
+.logo{ 
+    position: relative;
+    scale: 70%;
+    text-align: left;
+}
+
+.menulist{
+    display: none;position:
+    absolute;z-index:
+    2;width: 100%;
+}
+.menulist li{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 0.1px solid rgb(233, 233, 233);
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.em;
+    transition: background-color 0.3s ease;
+    
+}
+.cbt{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 0.1px solid rgb(233, 233, 233);
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.em;
+}
+.menulist li:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(134, 134, 134); 
+}
+.cbt:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(134, 134, 134); 
+}
+
+.n1 {
+    display: flex; /* Flexbox로 요소 배치 설정 */
+    justify-content: space-between; /* 요소들 사이의 간격을 최대화하여 옆으로 정렬 */
+    width: 100vw;
+    height: 40%;
+    background-color: #F8F5EE;
+}
+
+.p2 {
+    position: absolute;
+    text-align: center;
+    scale: 40%;
+    top: 0%;
+    left: -60%;
+    z-index: 1; /* p2 이미지가 p1 이미지 위에 위치하도록 함 */
+    filter: brightness(0) invert(1) grayscale(100%);
+    
+}
+
+.p3 {
+    display: none; /* 모바일 화면에서 숨김 */
+}
+
+.t1{ width: 90%;
+    height: auto;
+    padding-top: 8%;
+    padding-left: 20px;
+}
+
+.p1 img {
+    padding-top: 0;
+    width: 100%; /* 이미지를 화면 가로 너비에 맞게 설정 */
+    height: auto; /* 높이를 자동으로 조절하여 비율 유지 */
+    max-width: none; /* 부모 요소에 최대 너비가 제한되어 있는 경우 해제 */
+}
+
+.p4 {
+    scale: 65%;
+    position: relative;
+    padding-top: 0%;
+    margin-top: -10%;
+  
+    
+}
+
+
+ .p4-1 {
+    position: relative;
+    text-align: center;
+    padding-left: 0;
+    margin-left: -30%;
+    display: none;
+    
+}
+.mp4{
+    padding-top: 20%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    scale: 190%;
+    
+}
+.p4-2 {
+    scale: 90%;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+ .p4-3 {
+    scale: 45%;
+    position: absolute;
+    top: 85%;
+    padding-left: 0;
+    margin-left: -90%;
+    mix-blend-mode: overlay;
+    opacity: 80%;
+    display: none;
+}
+
+.t2 {
+    width: 60%; /* 화면 가로 폭에 맞게 설정 */
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+    z-index: 1;
+   
+}
+
+.t3 {
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 82%; /* 원하는 너비 설정 */
+    padding-top: 10%; /* 위쪽 여백 설정 */
+}
+.n2 {
+    width: 100vw;
+    height: 150vh;
+    background-color: #FAF3E4;
+}
+
+
+.l3{
+    height: 15vh;
+
+}
+
+
+.d {
+    scale: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.d > div {
+    margin: 13px; /* 이미지 사이의 간격 조정 */
+}
+
+
+
+.line1 { scale: 100%;
+display: none;}
+}

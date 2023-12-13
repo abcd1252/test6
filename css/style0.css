@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+a{ color: black;}
+a:hover {
+    color: rgb(134, 134, 134); /* 마우스 호버 시 링크 색상을 변경하는 부분 */
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #FFFEFC 11%, #F8F5EE 11%);
+    overflow: hidden;
+}
+
+.tit {
+    position: center;
+    scale: 90%;
+    width: 100vw;
+    transform: scale(0.9);
+    z-index: 3;
+    padding-top: 150px;
+    padding-left: 230px;
+    
+}
+
+.bg {
+    position: fixed; 
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg.png);
+    background-size: cover; 
+    z-index: 1;
+  }
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.mwrap {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+.mbt a {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    transition: all 0.5s;
+    
+}
+.Alexey {
+    scale: 75%;
+    width: 100vw; 
+    height: 100vh;
+    text-align: right;
+    z-index: 3;
+    padding-top: 90px;
+    right: 0;
+}
+
+.mbt a:hover {
+    color: #125412;
+}
+
+.logo {
+    scale: 100%;
+    padding-top: 20px;
+    padding-left:  0px;
+    margin-left: -20px;
+}
+.menubar {
+    display: none;
+}
+.menulist{
+    display: none;
+}
+
+
+@media screen and (max-width:600px)
+
+{
+.mwrap{
+text-align: center;
+
+}
+.test{display: none;}
+
+.menubar {
+    display: block;
+    padding-right: 10%;
+}
+.mbt a{display: none;}
+
+.tit{ 
+margin-left: 0;
+scale: 50%; 
+transform: translate(60%, 0%) ; 
+padding-left: 0px;
+padding-top: 0px;
+margin-top: -300px;
+z-index: 2;
+
+}
+.Alexey {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-70%, -70%) scale(0.60); 
+    z-index: 2;
+    width: 50px; 
+    height: 50px; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+.logo{ 
+    position: relative;
+    scale: 70%;
+    text-align: left;
+}
+.menubar {
+    padding-left: 34%;
+    scale: 130%;
+}
+.menulist{
+    display: none;position:
+    absolute;z-index:
+    2;width: 100%;
+}
+.menulist li{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 0.1px solid rgb(233, 233, 233);
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.em;
+    transition: background-color 0.3s ease;
+    
+}
+.cbt{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 0.1px solid rgb(233, 233, 233);
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.em;
+}
+.menulist li:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(134, 134, 134); 
+}
+.cbt:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(134, 134, 134); 
+}

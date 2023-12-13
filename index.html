@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexey Brodovitch</title>
+    <link rel="stylesheet" href="css/style0.css">
+    
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="2023년 유한대학교 시각디자인과">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/ob.png">
+    <meta property="og:description" content="2023년 유한대학교 시각디자인과">
+
+    <link rel="shortcut icon" href="img/pa.png" type="image/x-icon">
+    <link rel="icon" href="img/pa.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="menu">
+       
+        <div class="mwrap">
+            <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+            <div class="menubar" id="open"><img src="img/menu.svg" alt=""></div>
+            <div class="test"><a href=""><img src="img/test.png"></a></div>
+            <div class="mbt"><a href="wide1.html">Introduce</a></div>
+            <div class="mbt"><a href="wide2.html">History</a></div>
+            <div class="mbt"><a href="wide3.html">Works</a></div>
+            <div class="mbt"><a href="wide4.html">Philosophy</a></div>
+            
+        </div>
+        <ul class="menulist" id="menubox">
+            <li><a href="wide1.html">Introduce</a></li>
+            <li><a href="wide2.html">History</a></li>
+            <li><a href="wide3.html">Works</a></li>
+            <li><a href="wide4.html">Philosophy</a></li>
+            <div class="cbt" id="close">Menu Close</div>
+        </ul>
+    </div>
+    <div class="tit"><img src="img/title.png" alt=""></div>
+    <div class="Alexey"><img src="img/alexey.png" alt=""></div>
+    <div class="bg"></div>
+    
+    
+</body>
+
+<script>
+    document.getElementById('open').addEventListener('click',function(){
+        document.getElementById('menubox').style.display = 'block';
+    });
+    document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('menubox').style.display = 'none';
+    });
+</script>
+
+</html>
